@@ -1,7 +1,10 @@
 // QuickChange/TeleCard Emulator
 // v0.5
+// armeniki
+// https://github.com/armeniki/TeleCardEmulator/
 // 15 Jan 2023
 // Tested on an Arduino Pro Mini 5V 16MHz
+
 
 #define pin_RESET     3   
 #define pin_CLK       2   
@@ -48,13 +51,13 @@ void loop()
 			flag_Reset = 1;
 		}
 		if (line_CLK == 0 && flag_Reset == 1){
-			ResetCard();
-		} //Once the flag is set and CLOCK goes low, call the ResetCard function
+			resetCard();
+		} //Once the flag is set and CLOCK goes low, call the resetCard function
 	}
 }
 
 
-void ResetCard(){
+void resetCard(){
 	Serial.println("Reset Called");
 	flag_Reset = 0;
 	indexByte = 0;
