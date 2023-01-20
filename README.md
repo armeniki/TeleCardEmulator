@@ -19,6 +19,8 @@ Please refer to the ISO-7816 standard and enclosed instructions to determine the
 
 ## Limitations & Current Issues
 
-At this point, the emulator should only provide enough data to allow the payphone terminal to recognise it and display the monetary units available.  There is a major issue with the sketch and details can be found on the Issues page.
+At this point, the emulator should only provide enough data to allow the payphone terminal to recognise it and display the monetary units available.  Eventually an authentication routine will be included.  
+
+Unfortunately, there is a major issue with the sketch and details can be found on the Issues page.
 
 
