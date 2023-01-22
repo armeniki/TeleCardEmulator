@@ -17,10 +17,11 @@ The wiring is straight forward with 5 connections required from the Arduino to t
 Please refer to the ISO-7816 standard and enclosed instructions to determine the positions of these pins on the PCB you are using.
 
 
-## Limitations & Current Issues
+## Limitations
+At this point, the emulator will only data to allow the payphone terminal to recognise it and display the monetary units available.  Making this work also depends on the type of payphone you are using.  
 
-At this point, the emulator should only provide enough data to allow the payphone terminal to recognise it and display the monetary units available.  Eventually an authentication routine will be included.  
 
-Unfortunately, there is a major issue with the sketch and details can be found on the Issues page.
+## Authentication
+There is an authentication mechanism which is used to let the payphone know that the card is legitimate and can be used to pay for the call.  This process involves an 8-byte DES key stored in the payphone, which is used to authenticate the card.  In addition, once this is done, the payphone also checks that the card's serial number is within the range of accepted cards.  This is because some telcos use the same DES key to decrypt/authenticate these cards and simlpy restrict their use via card number ranges.  This is something that I have not implemented in this release.
 
 
