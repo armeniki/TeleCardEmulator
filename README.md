@@ -18,8 +18,8 @@ Please refer to the ISO-7816 standard and enclosed instructions to determine the
 
 
 ## Limitations
-At this point, the emulator will only output enough data to allow the payphone terminal to recognise it and display the monetary units available.  Making this work also depends on the type of payphone you are using and several security settings.  
+At this point, the emulator code allows the payphone terminal to recognise it and display the monetary units available.  Making this work also depends on the type of payphone you are using and several security settings.  
 
 
 ### Authentication
-There is an authentication mechanism which is used to let the payphone know that the card is legitimate and can be used to pay for the call.  This process involves an 8-byte DES key stored in the payphone, which is used to authenticate the card via interrogation (challenge response).  Once this is done, the payphone also checks that the card's serial number is within the range of accepted cards.  This is because some telcos use the same DES key to decrypt/authenticate these cards and restrict their use via card number ranges.  This is something that I have not implemented in this public release.
+There is an authentication mechanism which is used to let the payphone know that the card is legitimate and can be used to pay for the call.  It is a fairly simple one that is all computed in the payphone terminal itself.  Once this is done, the payphone also checks that the card's number is within the range of accepted cards.  
