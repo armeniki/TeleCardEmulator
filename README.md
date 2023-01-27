@@ -14,12 +14,12 @@ The wiring is straight forward with 5 connections required from the Arduino to t
 4. DATA
 5. RESET
 
-Please refer to the ISO-7816 standard and enclosed instructions to determine the positions of these pins on the PCB you are using.
+Please refer to the ISO-7816 standard and any enclosed instructions to determine the positions of the pins on the PCB you are using.
 
 
 ## Limitations
-At this point, the emulator code allows the payphone terminal to recognise it and display the monetary units available.  I will implement a decrementing counter routine as time permits.  
+At this point, the emulator code allows the payphone terminal to recognise it and display the monetary units available.  Once a number is dialled, the terminal will attempt a write operation on the respective bits, however, that is not implemented in this code at the moment.  I will implement a decrementing counter routine as time permits.  
 
 
 ### Authentication
-There is an authentication mechanism which is used to let the payphone know that the card is legitimate and can be used to pay for the call.  It is a fairly simple one that is all computed in the payphone terminal itself, mainly through byte shifting.  Once this is done, the payphone also checks that the card's number is within the range of accepted cards.  Please bear in mind that the functionality of this code depends on the type of payphone you are using and several security settings.  
+There is an authentication mechanism which is used to let the payphone know that the card is legitimate and can be used to pay for the call.  It is a fairly simple one that is all computed in the payphone terminal itself, mainly through bit shifting.  Once this is done, the payphone also checks that the card's number is within the range of accepted cards.  Please bear in mind that the functionality of this code depends on the type of payphone you are using and several security settings.  
