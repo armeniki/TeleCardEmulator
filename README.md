@@ -1,4 +1,4 @@
-# TeleCardEmulator
+# TeleCard (SLE4406) Emulator
 This is an Arduino sketch, in its preliminary stages, meant to allow the testing of smartcard readers found in some payphones.  Although payphones are no longer commonly found, there are many telephone enthusiasts who collect them.  Of particular interest to myself is the Nortel Millennium payphone.  Many of those payphones are equipped with smartcard readers which can be used to pay for telephone calls.  I have put together another repository in relation to the Millennium payphone.
 
 It should be noted that this program will *not* allow free telephone calls to be made on any payphone.  Each payphone has its own security features which will not be discussed here.  However, if you have a similar working payphone at home and would like to tinker with it and test its card reader, this program is what you are looking for.  It has been tested working on a multipay (type 29) terminal.
