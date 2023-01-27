@@ -18,7 +18,7 @@ Please refer to the ISO-7816 standard and enclosed instructions to determine the
 
 
 ## Limitations
-At this point, the emulator code allows the payphone terminal to recognise it and display the monetary units available.  I will implement a decrementing counter routing when time permits.  
+At this point, the emulator code allows the payphone terminal to recognise it and display the monetary units available.  I will implement a decrementing counter routine as time permits.  
 
 
 ### Authentication
