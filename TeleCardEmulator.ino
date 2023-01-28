@@ -71,10 +71,7 @@ void processBit(){
 		}
 	}
 
-	if (line_RESET == 1){
-		cardbits[addressBit] = digitalRead(pin_DATA);
 	
-	}
 
 }
 
