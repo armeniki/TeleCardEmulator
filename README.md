@@ -5,7 +5,7 @@ It should be noted that this program will *not* allow free telephone calls to be
 
 ### Hardware Required
 1. Ardiuno Pro Mini (5V 16Mhz)
-2. Smartcard-shaped PCB like this one ![alt text](https://raw.githubusercontent.com/armeniki/TeleCardEmulator/main/pics/pcb_card.jpg "Smartcard PCB") 
+2. Smartcard-shaped PCB similar to this one ![alt text](https://raw.githubusercontent.com/armeniki/TeleCardEmulator/main/pics/pcb_card.jpg "Smartcard PCB") 
 
 The wiring is straight forward with 5 connections required from the Arduino to the PCB:
 1. 5V
